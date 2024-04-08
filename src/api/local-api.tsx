@@ -20,7 +20,10 @@ import { Literal } from "expression/literal";
 
 /** Local API provided to specific codeblocks when they are executing. */
 export class DatacoreLocalApi {
-    public constructor(public api: DatacoreApi, public path: string) {}
+    public constructor(
+        public api: DatacoreApi,
+        public path: string
+    ) {}
 
     /** The current file path for the local API. */
     public currentPath(): string {

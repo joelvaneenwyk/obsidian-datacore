@@ -36,24 +36,24 @@ export type Literal =
 export type LiteralRepr<T extends LiteralType> = T extends "boolean"
     ? boolean
     : T extends "number"
-    ? number
-    : T extends "string"
-    ? string
-    : T extends "duration"
-    ? Duration
-    : T extends "date"
-    ? DateTime
-    : T extends "null"
-    ? null
-    : T extends "link"
-    ? Link
-    : T extends "array"
-    ? Array<Literal>
-    : T extends "object"
-    ? DataObject
-    : T extends "function"
-    ? Function
-    : any;
+      ? number
+      : T extends "string"
+        ? string
+        : T extends "duration"
+          ? Duration
+          : T extends "date"
+            ? DateTime
+            : T extends "null"
+              ? null
+              : T extends "link"
+                ? Link
+                : T extends "array"
+                  ? Array<Literal>
+                  : T extends "object"
+                    ? DataObject
+                    : T extends "function"
+                      ? Function
+                      : any;
 
 /** A wrapped literal value which can be switched on. */
 export type WrappedLiteral =
@@ -237,14 +237,14 @@ export namespace Literals {
                 return wrap1.value < (wrap2.value as DateTime)
                     ? -1
                     : wrap1.value.equals(wrap2.value as DateTime)
-                    ? 0
-                    : 1;
+                      ? 0
+                      : 1;
             case "duration":
                 return wrap1.value < (wrap2.value as Duration)
                     ? -1
                     : wrap1.value.equals(wrap2.value as Duration)
-                    ? 0
-                    : 1;
+                      ? 0
+                      : 1;
             case "array":
                 let f1 = wrap1.value;
                 let f2 = wrap2.value as any[];

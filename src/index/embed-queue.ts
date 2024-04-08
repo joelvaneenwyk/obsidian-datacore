@@ -14,7 +14,10 @@ export class EmbedQueue extends Component {
     /** If true, prevent any further loads. */
     private shutdown: boolean = false;
 
-    public constructor(public vault: Vault, public concurrency: () => number) {
+    public constructor(
+        public vault: Vault,
+        public concurrency: () => number
+    ) {
         super();
     }
 

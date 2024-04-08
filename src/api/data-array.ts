@@ -188,7 +188,10 @@ class DataArrayImpl<T> implements DataArray<T> {
     public length: number;
     [key: string]: any;
 
-    private constructor(public values: any[], public defaultComparator: ArrayComparator<any> = Literals.compare) {
+    private constructor(
+        public values: any[],
+        public defaultComparator: ArrayComparator<any> = Literals.compare
+    ) {
         this.length = values.length;
     }
 

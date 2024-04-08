@@ -34,7 +34,11 @@ export class Datacore extends Component {
     /** If true, datacore is fully hydrated and all files have been indexed. */
     initialized: boolean;
 
-    constructor(public app: App, public version: string, public settings: Settings) {
+    constructor(
+        public app: App,
+        public version: string,
+        public settings: Settings
+    ) {
         super();
 
         this.vault = app.vault;

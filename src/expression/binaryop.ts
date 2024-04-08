@@ -15,8 +15,8 @@ export type LiteralTypeOrAll = LiteralType | "*";
 export type LiteralReprAll<T extends LiteralTypeOrAll> = T extends "*"
     ? Literal
     : T extends LiteralType
-    ? LiteralRepr<T>
-    : any;
+      ? LiteralRepr<T>
+      : any;
 
 /** An implementation for a binary operator. */
 export type BinaryOpImpl<A extends Literal, B extends Literal> = (first: A, second: B, ctx: Evaluator) => Literal;
