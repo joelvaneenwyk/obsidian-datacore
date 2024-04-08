@@ -24,26 +24,23 @@
     "dataview",
     "pkm"
   ],
-  "peerDependencies": {
-    "esbuild": "*"
-  },
   "dependencies": {
     "@datastructures-js/queue": "^4.2.3",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "emoji-regex": "^10.2.1",
+    "emoji-regex": "^10.3.0",
     "flatqueue": "^2.0.3",
     "localforage": "1.10.0",
     "luxon": "^3.4.4",
-    "parsimmon": "^1.18.0",
-    "preact": "^10.17.1",
+    "parsimmon": "^1.18.1",
+    "preact": "^10.20.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-select": "^5.8.0",
     "sorted-btree": "^1.8.1",
     "sucrase": "3.35.0",
-    "yaml": "^2.3.3"
+    "yaml": "^2.4.1"
   },
   "devDependencies": {
     "@codemirror/language": "^6.10.1",
@@ -56,7 +53,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "builtin-modules": "3.3.0",
-    "esbuild": "^0.16.11",
+    "esbuild": "^0.20.2",
     "esbuild-plugin-inline-worker": "^0.1.1",
     "jest": "^27.1.0",
     "obsidian": "^1.4.11",
