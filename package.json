@@ -1,65 +1,68 @@
 {
-  "name": "datacore",
-  "version": "0.1.2",
-  "description": "Reactive data engine for Obsidian.md.",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "packageManager": "yarn@4.1.1",
-  "files": [
-    "lib/**/*"
-  ],
-  "scripts": {
-    "dev": "node esbuild.config.mjs",
-    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
-    "test": "yarn run jest",
-    "test-watch": "yarn run jest -i --watch --no-cache",
-    "check-format": "yarn run prettier --check src",
-    "format": "yarn run prettier --write src"
-  },
-  "keywords": [
-    "obsidian",
-    "datacore",
-    "dataview",
-    "pkm"
-  ],
-  "author": "Michael Brenan",
-  "license": "MIT",
-  "devDependencies": {
-    "@codemirror/language": "https://github.com/lishid/cm-language",
-    "@codemirror/state": "^6.0.1",
-    "@codemirror/view": "^6.0.1",
-    "@types/jest": "^27.0.1",
-    "@types/luxon": "^2.3.2",
-    "@types/node": "^16.7.13",
-    "@types/parsimmon": "^1.10.6",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "builtin-modules": "3.3.0",
-    "esbuild": "^0.16.11",
-    "esbuild-plugin-inline-worker": "https://github.com/mitschabaude/esbuild-plugin-inline-worker",
-    "jest": "^27.1.0",
-    "obsidian": "^1.4.11",
-    "prettier": "2.3.2",
-    "ts-jest": "^27.0.5",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.2"
-  },
-  "dependencies": {
-    "@datastructures-js/queue": "^4.2.3",
-    "@fortawesome/fontawesome-svg-core": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "emoji-regex": "^10.2.1",
-    "flatqueue": "^2.0.3",
-    "localforage": "1.10.0",
-    "luxon": "^3.4.4",
-    "parsimmon": "^1.18.0",
-    "preact": "^10.17.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-select": "^5.8.0",
-    "sorted-btree": "^1.8.1",
-    "sucrase": "3.35.0",
-    "yaml": "^2.3.3"
-  }
+    "name": "datacore",
+    "version": "0.1.2",
+    "description": "Reactive data engine for Obsidian.md.",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "packageManager": "yarn@4.1.1",
+    "files": [
+        "lib/**/*"
+    ],
+    "scripts": {
+        "dev": "node esbuild.config.mjs",
+        "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+        "test": "yarn run jest",
+        "test-watch": "yarn run jest -i --watch --no-cache",
+        "check-format": "yarn run prettier --check src",
+        "format": "yarn run prettier --write src"
+    },
+    "keywords": [
+        "obsidian",
+        "datacore",
+        "dataview",
+        "pkm"
+    ],
+    "author": "Michael Brenan",
+    "license": "MIT",
+    "devDependencies": {
+        "@codemirror/language": "^6.10.1",
+        "@codemirror/state": "^6.0.1",
+        "@codemirror/view": "^6.0.1",
+        "@types/jest": "^27.0.1",
+        "@types/luxon": "^2.3.2",
+        "@types/node": "^16.7.13",
+        "@types/parsimmon": "^1.10.6",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "builtin-modules": "3.3.0",
+        "esbuild": "^0.16.11",
+        "esbuild-plugin-inline-worker": "^0.1.1",
+        "jest": "^27.1.0",
+        "obsidian": "^1.4.11",
+        "prettier": "2.3.2",
+        "ts-jest": "^27.0.5",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.2"
+    },
+    "dependencies": {
+        "@datastructures-js/queue": "^4.2.3",
+        "@fortawesome/fontawesome-svg-core": "^6.4.0",
+        "@fortawesome/free-solid-svg-icons": "^6.4.0",
+        "@fortawesome/react-fontawesome": "^0.2.0",
+        "emoji-regex": "^10.2.1",
+        "flatqueue": "^2.0.3",
+        "localforage": "1.10.0",
+        "luxon": "^3.4.4",
+        "parsimmon": "^1.18.0",
+        "preact": "^10.17.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-select": "^5.8.0",
+        "sorted-btree": "^1.8.1",
+        "sucrase": "3.35.0",
+        "yaml": "^2.3.3"
+    },
+    "peerDependencies": {
+        "esbuild": "*"
+    }
 }
