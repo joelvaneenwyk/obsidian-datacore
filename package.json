@@ -8,6 +8,8 @@
     "files": [
         "lib/**/*"
     ],
+    "author": "Michael Brenan",
+    "license": "MIT",
     "scripts": {
         "dev": "node esbuild.config.mjs",
         "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
@@ -22,27 +24,8 @@
         "dataview",
         "pkm"
     ],
-    "author": "Michael Brenan",
-    "license": "MIT",
-    "devDependencies": {
-        "@codemirror/language": "^6.10.1",
-        "@codemirror/state": "^6.0.1",
-        "@codemirror/view": "^6.0.1",
-        "@types/jest": "^27.0.1",
-        "@types/luxon": "^2.3.2",
-        "@types/node": "^16.7.13",
-        "@types/parsimmon": "^1.10.6",
-        "@types/react": "^18",
-        "@types/react-dom": "^18",
-        "builtin-modules": "3.3.0",
-        "esbuild": "^0.16.11",
-        "esbuild-plugin-inline-worker": "^0.1.1",
-        "jest": "^27.1.0",
-        "obsidian": "^1.4.11",
-        "prettier": "2.3.2",
-        "ts-jest": "^27.0.5",
-        "tslib": "^2.3.1",
-        "typescript": "^4.4.2"
+    "peerDependencies": {
+        "esbuild": "*"
     },
     "dependencies": {
         "@datastructures-js/queue": "^4.2.3",
@@ -62,7 +45,24 @@
         "sucrase": "3.35.0",
         "yaml": "^2.3.3"
     },
-    "peerDependencies": {
-        "esbuild": "*"
+    "devDependencies": {
+        "@codemirror/language": "^6.10.1",
+        "@codemirror/state": "^6.0.1",
+        "@codemirror/view": "^6.0.1",
+        "@types/jest": "^27.0.1",
+        "@types/luxon": "^2.3.2",
+        "@types/node": "^16.7.13",
+        "@types/parsimmon": "^1.10.6",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "builtin-modules": "3.3.0",
+        "esbuild": "^0.16.11",
+        "esbuild-plugin-inline-worker": "^0.1.1",
+        "jest": "^27.1.0",
+        "obsidian": "^1.4.11",
+        "prettier": "2.3.2",
+        "ts-jest": "^27.0.5",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.2"
     }
 }
