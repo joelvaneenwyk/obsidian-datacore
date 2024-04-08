@@ -9,3 +9,8 @@ build/
 
 # Random crap.
 .DS_Store
+
+*.tgz
+
+coverage/
+src/**/*.js
