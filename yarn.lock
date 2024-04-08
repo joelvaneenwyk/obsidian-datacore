@@ -1244,17 +1244,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/luxon@npm:^2.3.2":
-  version: 2.4.0
-  resolution: "@types/luxon@npm:2.4.0"
-  checksum: 10c0/2686d03827a3799f0374923323148f4d0d07f9e4321551389b2ae285e5085e178cfe908806041ab32bf66534497702b4ae8459d1b4190258af133818d4b846c9
+"@types/luxon@npm:^3.4.2":
+  version: 3.4.2
+  resolution: "@types/luxon@npm:3.4.2"
+  checksum: 10c0/d835467de3daf7e17ba78b50bb5a14efd94272439ca067990d71332a54b311544459c69623eddd243b511b28d70194c9591a9ee8cf9c038962c965f991affd7e
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^16.7.13":
-  version: 16.18.95
-  resolution: "@types/node@npm:16.18.95"
-  checksum: 10c0/a8314ba3f19aeccd386f1eb35adaf19d52eb6f63697e580b55820134b81d3f99134d7db247a4ca7253256aff80a4ce3d4ca3df90e3ad6b680e12fa2f7e5e2f6e
+"@types/node@npm:*, @types/node@npm:^20.12.5":
+  version: 20.12.5
+  resolution: "@types/node@npm:20.12.5"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/2da65516fba98f0417620e42bddbe53e144d4782d69cd37f99df2537c6850b9cfbdb8a017f02c61e9a074bcac84f9f3f221b250474ac8c6b95d507a47e8d53f9
   languageName: node
   linkType: hard
 
@@ -1265,7 +1267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/parsimmon@npm:^1.10.6":
+"@types/parsimmon@npm:^1.10.9":
   version: 1.10.9
   resolution: "@types/parsimmon@npm:1.10.9"
   checksum: 10c0/fc7f47550b2e1f9ead12ec7820134e2428208ec27a0072a3d33de468537ca337c611bdb86b1b14611a7dfbf7fedd9ef17bc080dad68c65aa27e7b9191963c0c3
@@ -1969,9 +1971,9 @@ __metadata:
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.2"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
     "@types/jest": "npm:^27.0.1"
-    "@types/luxon": "npm:^2.3.2"
-    "@types/node": "npm:^16.7.13"
-    "@types/parsimmon": "npm:^1.10.6"
+    "@types/luxon": "npm:^3.4.2"
+    "@types/node": "npm:^20.12.5"
+    "@types/parsimmon": "npm:^1.10.9"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
     builtin-modules: "npm:3.3.0"
@@ -1985,15 +1987,15 @@ __metadata:
     obsidian: "npm:^1.4.11"
     parsimmon: "npm:^1.18.1"
     preact: "npm:^10.20.1"
-    prettier: "npm:2.3.2"
+    prettier: "npm:3.2.5"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-select: "npm:^5.8.0"
     sorted-btree: "npm:^1.8.1"
     sucrase: "npm:3.35.0"
     ts-jest: "npm:^27.0.5"
-    tslib: "npm:^2.3.1"
-    typescript: "npm:^4.4.2"
+    tslib: "npm:^2.6.2"
+    typescript: "npm:>=3.8.0 <5.0.0-0"
     yaml: "npm:^2.4.1"
   languageName: unknown
   linkType: soft
@@ -4078,12 +4080,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.3.2":
-  version: 2.3.2
-  resolution: "prettier@npm:2.3.2"
+"prettier@npm:3.2.5":
+  version: 3.2.5
+  resolution: "prettier@npm:3.2.5"
   bin:
-    prettier: bin-prettier.js
-  checksum: 10c0/40f159f05808966ff4c57e147651cf038adb7f5af3fbca8d999b87ccbaeff7d73cf9038a45f667a8c18cbb049c1a980a752fa8987dfd3dcdd66e932e366f40be
+    prettier: bin/prettier.cjs
+  checksum: 10c0/ea327f37a7d46f2324a34ad35292af2ad4c4c3c3355da07313339d7e554320f66f65f91e856add8530157a733c6c4a897dc41b577056be5c24c40f739f5ee8c6
   languageName: node
   linkType: hard
 
@@ -4807,7 +4809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.3.1":
+"tslib@npm:^2.6.2":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: 10c0/e03a8a4271152c8b26604ed45535954c0a45296e32445b4b87f8a5abdb2421f40b59b4ca437c4346af0f28179780d604094eb64546bee2019d903d01c6c19bdb
@@ -4837,7 +4839,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.4.2":
+"typescript@npm:>=3.8.0 <5.0.0-0":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -4847,13 +4849,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.4.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A>=3.8.0 <5.0.0-0#optional!builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10c0/e3333f887c6829dfe0ab6c1dbe0dd1e3e2aeb56c66460cb85c5440c566f900c833d370ca34eb47558c0c69e78ced4bfe09b8f4f98b6de7afed9b84b8d1dd06a1
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~5.26.4":
+  version: 5.26.5
+  resolution: "undici-types@npm:5.26.5"
+  checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
   languageName: node
   linkType: hard
 

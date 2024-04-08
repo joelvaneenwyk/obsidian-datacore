@@ -1,21 +1,24 @@
 {
-  "search.exclude": {
-    "**/.yarn": true,
-    "**/.pnp.*": true
-  },
-  "jest.enable": true,
-  "jest.jestCommandLine": "yarn run jest",
   "[javascript][javascriptreact][typescript][typescriptreact]": {
-    "editor.maxTokenizationLineLength": 2500,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "explicit",
-      "source.fixAll": "explicit"
-    }
+    "editor.maxTokenizationLineLength": 2500
   },
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  "errorLens.enabled": true,
+  "jest.enable": true,
+  "jest.jestCommandLine": "yarn run jest",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+  "search.exclude": {
+    "**/.pnp.*": true,
+    "**/.yarn": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.validate.enable": true,
+  "eslint.nodePath": ".yarn/sdks"
 }
