@@ -10,7 +10,7 @@ string operations, list operations, and so on).
 
 - [X] **Table**: The standard columnar table view.
 - [X] **List**: The standard list view, which just lists elements.
-- [ ] **Embed List**: A special list which just renders a list of embedded pages 
+- [ ] **Embed List**: A special list which just renders a list of embedded pages
 - [ ] **Card**: A card-based view which supports a title and card content.
 - [ ] **Grouped**: A special view which allows for splitting query results into subgroups, and render a separate
   table / list / card view for each group.
@@ -95,11 +95,11 @@ Background pre-requisites; this is generally not user facing.
 - [X] **Rate-limiting Background Importer**. Allow specifying a rate at which new files should be ingested, as well as
   how long in between consecutive file updates. Starting a vault with Datacore should introduce NO lag (by slowing down
   throttling).
-    - This can generally be computed by estimating how long the average file import takes (potentially correlated with
+  - This can generally be computed by estimating how long the average file import takes (potentially correlated with
       file length), and then scheduling file imports to reduce expected CPU time to X%.
 - [ ] **Performance Controls**: Support choosing which files to index, what file types to index, and what subfeatures to
   index all to speed up performance.
-    - All of these features will have timings which indicate how long they take, on average.
+  - All of these features will have timings which indicate how long they take, on average.
 - [X] **Throttle Controls**: Set a percent allowance of how much CPU to use up for all Datacore tasks.
 - [ ] **File-based Persistence**: IndexedDB appears to have hard metadata limits and does not work for large vaults
   (where caching is most desparately needed). An alternative multi-file database (of sorted JSON documents), like LowDB
