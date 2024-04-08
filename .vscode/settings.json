@@ -3,6 +3,8 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
+  "jest.enable": true,
+  "jest.jestCommandLine": "yarn run jest",
   "[javascript][javascriptreact][typescript][typescriptreact]": {
     "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
