@@ -1,0 +1,10 @@
+*.gz
+
+.pnp.cjs
+.pnp.loader.mjs
+
+.yarn/sdks/
+.yarn/cache/
+.yarn/unplugged/
+
+build/
