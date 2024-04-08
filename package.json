@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "node esbuild.config.mjs",
-    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "build": "tsc && node esbuild.config.mjs production",
     "test": "yarn run jest",
     "test-watch": "yarn run jest -i --watch --no-cache",
     "check-format": "yarn run prettier --check .",

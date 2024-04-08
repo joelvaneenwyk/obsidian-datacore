@@ -18,6 +18,7 @@
     "importHelpers": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
     "paths": {
       "react": ["../node_modules/preact/compat/"],
