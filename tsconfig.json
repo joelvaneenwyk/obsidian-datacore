@@ -7,7 +7,7 @@
     "target": "es2018",
     "allowJs": false,
     "jsx": "react-jsx",
-		"jsxImportSource": "preact",
+    "jsxImportSource": "preact",
     "noImplicitAny": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
@@ -19,7 +19,7 @@
     "downlevelIteration": true,
     "esModuleInterop": true,
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
-		"paths": {
+    "paths": {
       "react": ["../node_modules/preact/compat/"],
       "react-dom": ["../node_modules/preact/compat/"]
     }
