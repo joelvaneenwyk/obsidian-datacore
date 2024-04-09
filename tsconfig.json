@@ -19,6 +19,7 @@
     "downlevelIteration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "outDir": "build/js/",
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
     "paths": {
       "react": ["../node_modules/preact/compat/"],
