@@ -1,6 +1,6 @@
 module.exports = {
     preset: "ts-jest",
     testEnvironment: "jsdom",
-    testMatch: ["**/test/**/*.test.ts"],
+    testRegex: ".+test\\.tsx?$",
     moduleDirectories: ["node_modules", "src"],
 };
