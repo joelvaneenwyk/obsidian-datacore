@@ -22,10 +22,9 @@
     "outDir": "build/js/",
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
     "paths": {
-      "react": ["../node_modules/preact/compat/"],
-      "react-dom": ["../node_modules/preact/compat/"]
+      "src/*": ["*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["lib/**/*"]
+  "include": ["src/**/*.test.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["lib/**/*", ".yarn/**/*"]
 }
