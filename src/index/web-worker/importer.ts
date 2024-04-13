@@ -38,7 +38,11 @@ export class FileImporter extends Component {
     /** Throttle settings. */
     throttle: () => ImportThrottle;
 
-    public constructor(public vault: Vault, public metadataCache: MetadataCache, throttle?: () => ImportThrottle) {
+    public constructor(
+        public vault: Vault,
+        public metadataCache: MetadataCache,
+        throttle?: () => ImportThrottle
+    ) {
         super();
         this.workers = new Map();
         this.shutdown = false;

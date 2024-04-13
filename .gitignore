@@ -1,13 +1,16 @@
 # Package artifacts.
 package-lock.json
 node_modules/
+.pnp.cjs
+.pnp.loader.mjs
 
 # Build artifacts.
 build/
 
-# Various editor preferences.
-.vscode
-.idea/
-
 # Random crap.
 .DS_Store
+
+*.tgz
+
+coverage/
+src/**/*.js

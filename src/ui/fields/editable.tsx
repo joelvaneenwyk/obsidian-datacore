@@ -138,6 +138,7 @@ export function SelectableEditable({
 
     const editor = useMemo(() => {
         return (
+            // @ts-ignore
             <Select
                 classNamePrefix="datacore-selectable"
                 onChange={onChange}
@@ -197,8 +198,8 @@ export function DateEditable({
         return state.content instanceof DateTime
             ? state.content
             : typeof state.content == "string" && !!state.content
-            ? DateTime.fromJSDate(new Date(Date.parse(state.content)))
-            : null;
+              ? DateTime.fromJSDate(new Date(Date.parse(state.content)))
+              : null;
     }, [state.content]);
 
     const editorNode = <input type="date" onChange={onChange} value={jsDate?.toFormat("yyyy-MM-dd")} />;

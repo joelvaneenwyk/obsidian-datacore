@@ -85,7 +85,10 @@ export default class DatacorePlugin extends Plugin {
 
 /** Datacore Settings Tab. */
 class GeneralSettingsTab extends PluginSettingTab {
-    constructor(app: App, private plugin: DatacorePlugin) {
+    constructor(
+        app: App,
+        private plugin: DatacorePlugin
+    ) {
         super(app, plugin);
     }
 

@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: obsidian-datacore
+    path: ./.vscode/obsidian-datacore.txt
+    addWords: true
+dictionaries:
+  - obsidian-datacore
+words: []
+ignoreWords: []
+import: []

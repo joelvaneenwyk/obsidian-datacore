@@ -7,7 +7,7 @@
     "target": "es2018",
     "allowJs": false,
     "jsx": "react-jsx",
-		"jsxImportSource": "preact",
+    "jsxImportSource": "preact",
     "noImplicitAny": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
@@ -18,12 +18,13 @@
     "importHelpers": true,
     "downlevelIteration": true,
     "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "build/js/",
     "lib": ["dom", "es5", "scripthost", "es2018", "DOM.Iterable"],
-		"paths": {
-      "react": ["../node_modules/preact/compat/"],
-      "react-dom": ["../node_modules/preact/compat/"]
+    "paths": {
+      "src/*": ["*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["lib/**/*"]
+  "include": ["src/**/*.test.ts", "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["lib/**/*", ".yarn/**/*"]
 }

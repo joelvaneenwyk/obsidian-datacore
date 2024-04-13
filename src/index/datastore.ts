@@ -46,7 +46,11 @@ export class Datastore {
      */
     private folder: FolderIndex;
 
-    public constructor(public vault: Vault, public metadataCache: MetadataCache, public settings: Settings) {
+    public constructor(
+        public vault: Vault,
+        public metadataCache: MetadataCache,
+        public settings: Settings
+    ) {
         this.revision = 0;
         this.ids = new Set();
         this.objects = new Map();

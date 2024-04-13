@@ -174,7 +174,10 @@ export class FieldbearingVariables implements Variables {
 
 /** Delegate to local context first, then to parent context if not available. */
 export class LambdaVariables implements Variables {
-    public constructor(public parent: Variables, public locals: Record<string, Literal>) {}
+    public constructor(
+        public parent: Variables,
+        public locals: Record<string, Literal>
+    ) {}
 
     public all(): DataObject {
         return { ...this.parent.all(), ...this.locals };

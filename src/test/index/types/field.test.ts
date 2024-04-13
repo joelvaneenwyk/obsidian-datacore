@@ -4,7 +4,11 @@ import { Indexable } from "index/types/indexable";
 import { FrontmatterEntry } from "index/types/markdown/json";
 
 class DummyFields {
-    public constructor(public $text: string, public $value: number, public $size: number) {}
+    public constructor(
+        public $text: string,
+        public $value: number,
+        public $size: number
+    ) {}
 
     public get $valueSize(): number {
         return this.$value + this.$size;

@@ -1,9 +1,26 @@
 {
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "semi": true,
-    "singleQuote": false,
-    "printWidth": 120,
-    "useTabs": false,
-    "bracketSpacing": true
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "endOfLine": "auto",
+  "semi": true,
+  "singleQuote": false,
+  "printWidth": 120,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "overrides": [
+    {
+      "files": ["*.json", "*.yml", "*.yaml", ".prettierrc"],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 200
+      }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "tabWidth": 1,
+        "printWidth": 120
+      }
+    }
+  ]
 }
